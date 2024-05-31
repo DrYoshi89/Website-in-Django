@@ -1,0 +1,159 @@
+
+
+body, html {
+	background-color: #19191a;
+}
+
+.vertical-nav a:hover {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+.vertical-nav {
+      min-width: 17rem;
+      width: 17rem;
+      height: 500vh;
+      margin-left: -17rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #282829;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s;
+}
+
+.page-content {
+      width: 100%;
+      margin-left: 0rem;
+      transition: all 0.4s;
+      background-color: #19191a;
+}
+
+
+#top-vertnav {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom: #555;
+}
+
+#sidebarCollapse {
+  background-color: #19191a;
+  color: white;
+  border-width: 2;
+  border-color: #555;
+}
+/* for toggle behavior */
+    
+#sidebar.active {
+  margin-left: 0rem;
+  
+}
+    
+#main.active {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+}
+
+.footer.active {
+  width: calc(100% - 17rem);
+}
+  
+@media (max-width: 768px){ 
+  #sidebar {
+    margin-left: -17rem;
+    }
+  #sidebar.active {
+    margin-left: 0;
+    }
+  #main {
+    width: 100%;
+    margin: 0;
+    }
+  #main.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+  .footer.active {
+    width: calc(100% - 17rem);
+    }
+  }
+
+/*---footer---*/
+.footer {
+  position: fixed;
+    bottom: 0;
+    width: 94%;
+    margin-left: 0;
+    height: 75px; /* Set the fixed height of the footer here */
+    line-height: 30px; /* Vertically center the text there */
+    color: white;
+    background-color: #19191a;
+    text-align: center;
+    transition: all 0.4s;
+  }
+  
+.footer .col-md-3, .footer .col-sm{
+    position:relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    column-gap: 10px;
+    margin-top: 10px;
+}    
+
+.list-unstyled{
+  display: block;
+  text-align: center;
+  display: inline-flex;
+  column-gap: 10px;
+}
+
+.footer a {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  display: block;
+}
+
+.footer h5 {
+  font-size: 16px;
+  margin-top: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.footer-logo {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.footer img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer a:hover {
+  cursor: pointer;
+  background-color: none;
+  text-decoration: none;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+/* BUTTON SCROLL UP */
+
+.footer button {
+  position: relative;
+  z-index: 2;
+  float: inline-end;
+  float: right;
+  bottom: 80px;
+  right: 80px;
+}
+
+.footer button:hover {
+  background-color: rgb(48, 61, 231);
+}
